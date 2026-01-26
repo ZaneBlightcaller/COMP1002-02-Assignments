@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Tab Webpage Title-->
+     <title>Week 3 - User Registration Form<title>
+     <style>
+          input {
+               display:block; 
+          }
+
+          input[type="submit"] {
+               margin-top: 1rem; 
+          }
+          label {
+               display:block; 
+               margin: 1rem 0; 
+          }
+     </style>
+</head>
+<body>
+     <form method="post"><form>
+          
+          <fieldset>          
+               <h1>User Registration Form</h1>
+               
+                    <!--user Firstname setup--> 
+                    <label for="Fullname">Fullname:<label>
+                    <input type="text" id="Fullname" name="Fullname" placeholder="First Name" />
+                    <!--user Lastname setup-->
+                    <label for="Lastname">Lastname:<label>
+                    <input type="text" id="Lastname" name="Lastname" placeholder="Last Name" />
+                    <!--user Email setup-->
+                    <label for="Email">Email Address:<label>
+                    <input type="email" id="email" name="email" placeholder="email">
+                    <!--Password-->
+                    <label for="password">Password: *<label>
+                    <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Must contain one number, one uppercase character, one lowercase character, a special character and be 8 characters in length" required>
+                    <!--Password Confirm-->
+                    <label for="password_confirm">Confirm Password: *<label>
+                    <input type="password" name="password_confirm" id="password_confirm" required>
+                    <!--date of birth - optional-->
+                    <label for="birthday">Date of Birth:<label>
+                    <input type="date" name="birthday" id="birthday">
+                    <!--Gender radio buttons for one choice only-->
+                    <legend>Male<legend>
+                    <input type="radio" name="MaleorFemaleorOther" value="">
+                    <legend>Female<legend>
+                    <input type="radio" name="MaleorFemaleorOther" value="">
+                    <legend>Other<legend>
+                    <input type="radio" name="MaleorFemaleorOther" value="">
+                    <!--Preferences using checkboxes-->
+                    <legend>Preferences<legend>
+                    <label for="Subscribe to newsletter">Subscribe to newsletter:<label>
+                    <input type="checkbox" name="Subscribe to newsletter" id="Subscribe to newsletter" value="">
+                    <label for="I agree to the terms & conditions">I agree to the terms & conditions:</label>
+                    <input type="checkbox" name="SI agree to the terms & conditions" id="I agree to the terms & conditions" value="">
+                    <!--Country selection using select dropdown-->
+                    <label for="Country">Country:<label>
+                    <select id="Country" name="Country" required>
+                    <option value=""> Select Your Country <option>
+                    <option value="Canada">Canada <option>
+                    <option value="Germany">Germany <option>
+                    <option value="Norway">Norway <option>
+                    <option value="United States">United States </option>
+                    <option value="France">France <option>
+                    </select>
+                    <Legend>Comments:</Legend>
+                    <textarea name="Comments" rows=4 colm=""><textarea>
+                    <!--submit button-->
+                    <input type="submit" value="Submit Form">
+               </fieldset>     
+          </form>    
+     </body>
+</html>
